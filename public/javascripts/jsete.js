@@ -86,7 +86,7 @@ function emitirSomDeGol(selecao){
 
 function emitirSom(audio){
   //faz o restart do audio caso já esteja em andamento
-  if(audio.currentTime != 0){
+  if(audio.currentTime && audio.currentTime != 0){
     audio.pause();
     audio.currentTime = 0;
     audio.play();
