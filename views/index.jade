@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  center
+    span.tempo "Tempo de jogo:"
+      input(type='text', id='timer', value='00')
+      span minutos
+    div
+      div(id="timeA")
+      div(id="timeB")
+    section
+      div(id="timeAplacar") 0
+      div(id="timeBplacar") 0
+    div(id="placarAnalitico")
+    audio(src="mp3/gol_brasfoot.mp3",id="golAlemanha_audio")
+      Seu navegador é antigo :P<BR>
+      E não suporta o elemento <code>audio</code>.
+    audio(src="mp3/risada_zacarias.mp3",id="golBrasil_audio")
+      Seu navegador é antigo :P<BR>
+      E não suporta o elemento <code>audio</code>.
+    div(id="goleadaTimeA",style="visibility: hidden")
+      img(src="images/gauchoChorando.jpg")
+    div(id="goleadaTimeB",style="visibility: hidden")
+      img(src="images/gauchoFeliz.jpg")
