@@ -1,13 +1,12 @@
 var selecoes = ["Brasil","Alemanha"];
- var golsdoJogo = {
-                      "gol" : []
-                    };
+var golsdoJogo = { "gol" : [] };
+
 var $golAlemanha_audio = document.getElementById("golAlemanha_audio");
 var $golBrasil_audio = document.getElementById("golBrasil_audio");
 
 function cronometro(){
   minuto = document.getElementById("timer").value;  
-  if(minuto <= 90){
+  if(minuto < 90){
     document.getElementById("timer").value = parseInt(minuto) + 1;    
     goleada(minuto);
     setTimeout("cronometro()",100);   
