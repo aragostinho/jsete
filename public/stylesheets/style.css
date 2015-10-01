@@ -1,0 +1,15 @@
+body {
+	padding: 50px;
+	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+	color: #00B7FF;
+}
+
+.placarTabela{color:red; background-color: #EEEEEE; font-family: verdana; font-size: 18px; text-align: center; font-weight: bolder; border }
+.placarLinha {color: black; font-family: verdana; font-size: 14px; background-color: #FFFFFF}
+.placarDetalhes {background-color: #EEEEEE; font-size: 11px; font-family: verdana;} 
+.lances{color: red; font-size: 13px; font-family: verdana; font-weight: bold}
+.tempo{color: blue;font-family: verdana; font-size: 12px; font-weight: bold; };
+
