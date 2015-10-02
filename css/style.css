@@ -1,0 +1,37 @@
+html {
+  font-family: verdana;
+  text-align: center;
+}
+
+.placarTabela {
+  color: red;
+  background-color: #EEEEEE;
+  font-family: verdana;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bolder;
+  border
+}
+
+.placarLinha {
+  color: black;
+  font-size: 14px;
+  background-color: #FFFFFF
+}
+
+.placarDetalhes {
+  background-color: #EEEEEE;
+  font-size: 11px;
+}
+
+.lances {
+  color: red;
+  font-size: 13px;
+  font-weight: bold
+}
+
+.tempo {
+  color: blue;
+  font-size: 12px;
+  font-weight: bold;
+}
