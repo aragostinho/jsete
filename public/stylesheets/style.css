@@ -1,6 +1,79 @@
-.placarTabela{color:red; background-color: #EEEEEE; font-family: verdana; font-size: 18px; text-align: center; font-weight: bolder; border }
-.placarLinha {color: black; font-family: verdana; font-size: 14px; background-color: #FFFFFF}
-.placarDetalhes {background-color: #EEEEEE; font-size: 11px; font-family: verdana;} 
-.lances{color: red; font-size: 13px; font-family: verdana; font-weight: bold}
-.tempo{color: blue;font-family: verdana; font-size: 12px; font-weight: bold; };
+html {
+  font-family: verdana;
+  text-align: center;
+}
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  background: url('../images/icons/icon-camp.svg') center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+}
+
+header {
+  display: -webkit-box;
+  /* Chrome 20-, iOS 6-, Safari 3.1  -6 */
+  display: -webkit-flex;
+  /* Chrome 21 + */
+  display: -moz-box;
+  /* FF 19- */
+  display: -moz-flex;
+  /* FF 20+ */
+  display: -ms-flexbox;
+  /* IE 10 */
+  display: flex;
+  /* FF 20+, Chrome 29+, Opera 12.1, 17+ */
+  -ms-flex-wrap: none;
+  -webkit-flex-wrap: nowrap;
+  /* Chrome 20-, iOS 6-, Safari 3.1 - 6 */
+  flex-wrap: nowrap;
+  /* FF 28+, Chrome 21+, Opera 12.1, 17+, IE 11 */
+  -ms-flex-line-pack: distribute;
+}
+
+[class*="m-time-"] {
+  text-align: center;
+  width: 40%;
+}
+
+[class*="m-time-"] images {
+  width: 8em;
+}
+
+.m-timer{
+  width: 20%;
+}
+
+.placarTabela {
+  color: red;
+  background-color: #EEEEEE;
+  font-family: verdana;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bolder;
+  border
+}
+
+.placarLinha {
+  color: black;
+  font-size: 14px;
+  background-color: #FFFFFF
+}
+
+.placarDetalhes {
+  background-color: #EEEEEE;
+  font-size: 11px;
+}
+
+.lances {
+  color: red;
+  font-size: 13px;
+  font-weight: bold
+}
