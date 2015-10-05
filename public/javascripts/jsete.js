@@ -133,4 +133,5 @@ function init(){
    inicioJogo(); 
 }
 
+
 init();
