@@ -1,32 +1,29 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="initial-scale=1.0, minimum-scale=1, width=device-width, user-scalable=yes" />
   <title>JSete</title>
 
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="public/stylesheets/style.css" />
 </head>
 
 <body>
 
-  <svg style="display: none;">
-
-  </svg>
-
-
   <div class="main">
     <header>
       <section class="m-time-1">
-        <images src="images/icons/icon-brazilian-flag.svg" alt="" />
+        <img src="public/images/icons/icon-brazilian-flag.svg" alt="" />
       </section>
 
       <section class="m-timer">
         <input type="text" id="m-timer" value="00" readonly />
+        <label for="m-timer">&nbsp;</label>
       </section>
 
       <section class="m-time-2">
-        <images src="images/icons/icon-german-flag.svg" alt="" />
+        <img src="public/images/icons/icon-german-flag.svg" alt="" />
       </section>
     </header>
 
@@ -46,25 +43,25 @@
 
 
 
-    <audio src="mp3/gol_brasfoot.mp3" id="golAlemanha_audio">
+    <audio src="public/mp3/gol_brasfoot.mp3" id="golAlemanha_audio">
       Seu navegador é antigo :P
       <BR> E não suporta o elemento <code>audio</code>.
     </audio>
-    <audio src="mp3/risada_zacarias.mp3" id="golBrasil_audio">
+    <audio src="public/mp3/risada_zacarias.mp3" id="golBrasil_audio">
       Seu navegador é antigo :P
       <BR> E não suporta o elemento <code>audio</code>.
     </audio>
 
     <div id="goleadaTimeA" style="visibility: hidden">
-      <images src="images/gauchoChorando.jpg">a
+      <images src="images/gauchoChorando.jpg">
     </div>
     <div id="goleadaTimeB" style="visibility: hidden">
-      <images src="images/gauchoFeliz.jpg">b
+      <images src="images/gauchoFeliz.jpg">
     </div>
 
   </div>
 
-  <script src="js/jsete.js"></script>
+  <script src="public/javascripts/jsete.js"></script>
 </body>
 
 </html>

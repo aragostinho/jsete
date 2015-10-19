@@ -43,17 +43,36 @@ header {
   width: 40%;
 }
 
-[class*="m-time-"] images {
+[class*="m-time-"] img {
   width: 8em;
 }
 
-.m-timer{
+.m-timer {
   width: 20%;
+}
+
+.m-timer #m-timer{
+  background: rgba(255, 255, 255, .5);
+  border: none;
+  display: block;
+  font-weight: 900;
+  height: 3em;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.m-timer + label {
+  position: relative;
+  vertical-align: middle;
+}
+
+.m-timer + label:before {
+  content: url('../images/icons/icon-timer.svg');
 }
 
 .placarTabela {
   color: red;
-  background-color: #EEEEEE;
+  background-color: #eee;
   font-family: verdana;
   font-size: 18px;
   text-align: center;
@@ -64,16 +83,110 @@ header {
 .placarLinha {
   color: black;
   font-size: 14px;
-  background-color: #FFFFFF
+  background-color: #fff;
 }
 
 .placarDetalhes {
-  background-color: #EEEEEE;
+  background-color: #eee;
   font-size: 11px;
 }
 
 .lances {
   color: red;
   font-size: 13px;
-  font-weight: bold
+  font-weight: bold;
+}
+
+
+/* animação da bandeira */
+
+@-webkit-keyframes flag-goal {
+  0% {
+    width: 8em;
+  }
+  40% {
+    width: 8.5em;
+  }
+  80% {
+    width: 9em;
+  }
+}
+
+@-moz-keyframes flag-goal {
+  0% {
+    width: 8em;
+  }
+  40% {
+    width: 8.5em;
+  }
+  80% {
+    width: 9em;
+  }
+}
+
+@-ms-keyframes flag-goal {
+  0% {
+    width: 8em;
+  }
+  40% {
+    width: 8.5em;
+  }
+  80% {
+    width: 9em;
+  }
+}
+
+@-o-keyframes flag-goal {
+  0% {
+    width: 8em;
+  }
+  40% {
+    width: 8.5em;
+  }
+  80% {
+    width: 9em;
+  }
+}
+
+@keyframes flag-goal {
+  0% {
+    width: 8em;
+  }
+  40% {
+    width: 8.5em;
+  }
+  80% {
+    width: 9em;
+  }
+}
+
+.m-flag-goal {
+  -webkit-animation: flag-goal 1s 3 ease;
+  -moz-animation: flag-goal 1s 3 ease;
+  -ms-animation: flag-goal 1s 3 ease;
+  -o-animation: flag-goal 1s 3 ease;
+  animation: flag-goal 1s 3 ease;
+}
+
+@media (max-width: 480px) {
+  header {
+    display: -webkit-box;
+    /* Chrome 20-, iOS 6-, Safari 3.1  -6 */
+    display: -webkit-flex;
+    /* Chrome 21 + */
+    display: -moz-box;
+    /* FF 19- */
+    display: -moz-flex;
+    /* FF 20+ */
+    display: -ms-flexbox;
+    /* IE 10 */
+    display: flex;
+    /* FF 20+, Chrome 29+, Opera 12.1, 17+ */
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    /* Chrome 20-, iOS 6-, Safari 3.1 - 6 */
+    flex-wrap: wrap;
+    /* FF 28+, Chrome 21+, Opera 12.1, 17+, IE 11 */
+    -ms-flex-line-pack: distribute;
+  }
 }
