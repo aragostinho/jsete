@@ -11,17 +11,18 @@ var selectId = function (elemId) {
 var $golAlemanha_audio = selectId("golAlemanha_audio");
 var $golBrasil_audio = selectId("golBrasil_audio");
 
-function cronometro() {
-  minuto = selectId("m-timer").value;
-  if (minuto <= 90) {
-    selectId("m-timer").value = parseInt(minuto) + 1;
-    goleada(minuto);
-    setTimeout("cronometro()", 200);
-    //selectClass('.m-time-2 > img').className = 'm-flag-goal';
-  } else
-    fimJogo();
-}
+function cronometro(){
+    minuto = document.getElementById("m-timer").value;  
+    minuto = parseInt(minuto)+1; 
 
+    if(minuto <= 90){      
+      document.getElementById("m-timer").value = minuto;    
+      goleada(minuto);
+      setTimeout("cronometro()",100);   
+    }
+   else
+     fimJogo();
+}
 function inicioJogo() {
   placarDeTimes();
   cronometro();
@@ -44,27 +45,27 @@ function fimJogo() {
 
 }
 
+function goleada(minuto){ 
 
-function goleada(minuto) {
-
-  if (minuto == 11)
-    marcarGol(minuto, selecoes[1], "Muller")
-  else if (minuto == 23)
-    marcarGol(minuto, selecoes[1], "Klose")
-  else if (minuto == 24)
-    marcarGol(minuto, selecoes[1], "Kroos")
-  else if (minuto == 26)
-    marcarGol(minuto, selecoes[1], "Kroos")
-  else if (minuto == 29)
-    marcarGol(minuto, selecoes[1], "Khedira")
-  else if (minuto == 69)
-    marcarGol(minuto, selecoes[1], "Schurrle")
-  else if (minuto == 79)
-    marcarGol(minuto, selecoes[1], "Schurrle")
-  else if (minuto == 90)
-    marcarGol(minuto, selecoes[0], "Oscar")
+  if(minuto==11)
+      marcarGol(minuto,selecoes[1],"Muller")   
+  else if(minuto==23)
+      marcarGol(minuto,selecoes[1],"Klose")     
+  else if(minuto==24)
+      marcarGol(minuto,selecoes[1],"Kroos")  
+  else if(minuto==26)
+      marcarGol(minuto,selecoes[1],"Kroos") 
+  else if(minuto==29)
+      marcarGol(minuto,selecoes[1],"Khedira") 
+  else if(minuto==69)
+      marcarGol(minuto,selecoes[1],"Schurrle") 
+  else if(minuto==79)
+      marcarGol(minuto,selecoes[1],"Schurrle") 
+  else if(minuto==90)
+      marcarGol(minuto,selecoes[0],"Oscar")
 
 }
+
 
 function marcarGol(minuto, selecao, goleador) {
   golsdoJogo.gol.push({
